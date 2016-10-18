@@ -17,14 +17,14 @@ var app = angular.module("app", ['ui.bootstrap', 'tm.pagination', 'ui.router'], 
         ]
     )
     .config(function ($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise('/app/configuration');
+        $urlRouterProvider.otherwise('/access/signin');
 
         $stateProvider
             .state('app', {
                 abstract: true,
                 url: '/app',
                 templateUrl: 'partials/template/app.html',
-                controller:'AppController'
+                controller: 'AppController'
             })
             .state('app.configuration', {
                 url: '/configuration',
@@ -35,9 +35,14 @@ var app = angular.module("app", ['ui.bootstrap', 'tm.pagination', 'ui.router'], 
                 url: '/access',
                 template: '<div ui-view class="fade-in-right-big smooth"></div>'
             })
-            .state('access.login', {
-                url: '/login',
-                templateUrl: 'partials/login.html',
-                controller: 'LoginController'
+            .state('access.signin', {
+                url: '/signin',
+                templateUrl: 'partials/signin.html',
+                controller: 'SigninController'
+            })
+            .state('access.signup', {
+                url: '/signup',
+                templateUrl: 'partials/signup.html',
+                controller: 'SignupController'
             })
     });

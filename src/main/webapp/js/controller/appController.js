@@ -1,6 +1,7 @@
 app.controller('AppController', function ($scope, $http) {
+
     $scope.app = {
-        name: 'Angulr',
+        name: 'MyApp',
         version: '1.1.3',
         color: {
             primary: '#7266ba',
