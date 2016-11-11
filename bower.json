@@ -1,0 +1,14 @@
+{
+    "name": "myApp",
+    "version": "1.0",
+    "authors": [
+        "susan.su@pwc.com"
+    ],
+    "description": "Spring MVC | AngularJs project - myApp",
+    "dependencies": {
+        "angular": "1.3.8",
+        "angular-ui-router": "0.3.1",
+        "bootstrap": "3.3.7",
+        "jquery": "3.1.1"
+    }
+}
